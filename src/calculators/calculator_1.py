@@ -1,7 +1,7 @@
 from flask import request as FlaskRequest
 
 class Calculator1:
-    def calculate(self, request:FlaskRequest)-> dict:
+    def calculate(self, request:FlaskRequest)-> dict: #type: ignore
         
         
         body = request.json
