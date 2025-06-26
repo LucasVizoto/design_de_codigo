@@ -10,6 +10,9 @@ class NumpyHandler(DriverHandlerInterface):
     # e caso necessário vou instanciando essa classe  
     def standard_derivation(self, numbers: list[float]) -> float:
         return self.__np.std(numbers)
+    
+    def variance(self, numbers: list[float])-> float:
+        return self.__np.var(numbers)
 '''
 Caso em meu projeto seja necessário que eu crie um outro método para
 o uso de um parametro extremamente específico, fazer da seguinte forma
@@ -18,4 +21,4 @@ o uso de um parametro extremamente específico, fazer da seguinte forma
         return self.__np.std(numbers, axis=[])
     
 '''
-    
+
