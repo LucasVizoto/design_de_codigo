@@ -8,9 +8,10 @@ class MockRequest:
     def __init__(self, body: dict) -> None:
         self.json = body
 
-class MockDriverHandler(DriverHandlerInterface):
+class MockDriverHandler():
     def standard_derivation(self, numbers: list[float]) -> float:
         return 3
+    
     # a lógica desse mock é criar um elemento fictício e controlado
     # para testar não a integração entre a Calc2 e o Numpy, mas sim a 
     # lógica implementada por trás da calc2, por isso o retono é simplemente 3   
